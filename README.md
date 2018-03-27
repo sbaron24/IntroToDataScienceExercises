@@ -1,1 +1,1 @@
-# IntroToDataScienceExercise3.1
+# IntroToDataScienceExercises
