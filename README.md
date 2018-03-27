@@ -1,2 +1,2 @@
-# Exercise-3.1-Basic-Data-Manipulation
-Submission for Exercise 3.1 that looks at a small dataset of company and product information
+# IntroToDataScience
+This is the Intro course for Springboard's Data Science Curriculum.
