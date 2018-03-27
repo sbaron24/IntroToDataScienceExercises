@@ -1,0 +1,64 @@
+---
+title: "Exercise 3.2 Missing Values"
+author: "Sean Baron"
+date: "3/27/2018"
+output: html_document
+---
+
+```{r results = FALSE, echo = FALSE, message = FALSE}
+install.packages("gdata", repos = "http://cran.us.r-project.org")
+install.packages("dplyr", repos = "http://cran.us.r-project.org")
+library("gdata")
+library("dplyr")
+```
+
+
+### Exercise Description
+
+Go through various exercises and methods for dealing with missing values.
+
+### Step 0: Load data into R.
+
+```{r}
+df <- read.xls("titanic3.xls", sheet = 1, header = TRUE)
+```
+
+### Step 1: Port of Embarkation 
+
+Change emtpy values in embarked to the factor level S:
+
+```{r}
+df$embarked[which(df$embarked == "")] <- as.factor("S")
+```
+
+### Step 2: Age
+
+Replace all missing age values (NAs) with mean of age column.
+
+```{r}
+df$age[which(is.na(df$age))] <- mean(df$age, na.rm = TRUE)
+```
+
+Alternatively, we could've used a linear regression to approximate each of the missing values.
+
+### Step 3: Lifeboat
+
+Change emtpy values for 'r boat' to NA.
+
+```{r}
+df$boat[which(df$life == "")] <- NA
+```
+
+### Step 4: Cabin
+
+There are a number of missing cabin numbers. The only case where it would make sense to fill these missing values is if we had a accurate model for classifying what those cabin numbers would be.
+
+A significant number of cabin values are missing (`r round(100*(sum(df$cabin == "")/length(df$cabin)), digits = 2)`%). Given the significant number of missing values and the possiblility that the majority are missing, it's worth seeing if missing or no missing is a predictor of survival...
+
+Create a missing or not missing dummy variable for cabin.
+
+Change empty values for 'r boat' to NA.
+```{r}
+df$has_cabin_number <- ifelse(!df$cabin == "", 1, 0)
+```
+
