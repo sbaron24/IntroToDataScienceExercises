@@ -1,0 +1,16 @@
+Project Idea 1: Psychic Advisor Recommendations
+
+Psychic Source (psychicsource.com) is an phone and online psychic chat business that connects people across the US with psychic advisors. Supply and demand is a challenge with the service for which there is no clear answer how to solve. More specifically, customers may wait in a 'queue', wait for a callback from the phone system, or altogether choose not to have a call if their favorite psychic is unavailable. There is an opportunity to explore customers currenty behavior using statistics and EDA and design an intervention using a simple recommender engine. This analysis could lead to more sophisticated recommender engines. 
+
+
+Project Idea 2: Wine Recommender
+
+From my own personal experience, choosing a beverage at a store or in a restaurant requires a leap of faith, especially depending on how versed a waiter or waitress is in beers, wine, or spirits.
+
+A dataset of ~130k wine reviews by professional wine tasters is posted on Kaggle (https://www.kaggle.com/zynicide/wine-reviews). Each row is a wine with attributes like country, variety, professional taster's name, taster twitter handle, description of wine and point rating given by the taster. This data poses an opportunity to explore and better understand the descriptive relationships between different wines, varieties, and places of origin, so that people who want to expand their palette will be happier with their selections based on their current preferences.
+
+Project Idea 3: Meetup.com Groups 
+
+Meetsup.com is a platform and online community that brings together people who have common interests or passions all over the world, ranging from social, technology, business, horsebackriding, yodling, beer, and many, many more.
+
+A number of large Meetup.com datasets containing data on categories, topics, groups, events, and members has been uploaded to Kaggle.com (https://www.kaggle.com/sirpunch/meetups-data-from-meetupcom). Exploring and better understanding this data could help members make better decisions about which group to join, event organizers or group leaders understand what factors are most important for event or group success, or Meetup.com to see larger geographic or categorical trends or opportunities. 
